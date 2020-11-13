@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js"></script>
+  <title>Dummy Data Todo List</title>
+</head>
+<body>
+  <button onclick="fetchTodos()">Fetch Todos</button>
+  <button onclick="logTodos()">Log Todos</button>
+  <button onclick="populateTodos()">Populate Todos</button>
+  <select name="numUser" id="numUser">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+  <button onclick="filterArrayOfToDos(`userId`)">Filter Todos by UserId</button>
+  <button onclick="filterArrayOfToDos(`completed`)">Filter Todos by Completed</button>
+  <button onclick="removeElements()">Remove Todos</button>
+ <ol id="todo-list">
+   <!-- LIs will go here -->
+ </ol>
+</body>
+</html>
